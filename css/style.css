@@ -1,0 +1,445 @@
+/* All Common Css */
+
+:root {
+    --primary-color:#6F2CF4;
+    --heading-color:#7A7A7A;
+    --paragraph-color:rgba(49, 46, 46, 0.849);
+    --white-color:#fff;
+    --bg-color:gray;
+}
+
+
+* {
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing:border-box;
+
+}
+ul,ol {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+a {
+    text-decoration:none;
+    display:inline-block;
+}
+input,select:focus {
+    border:none;
+    outline:none;
+    box-shadow:none;
+}
+/* All Common Css */
+
+
+
+/* mode chose  */
+.mode {
+    position:fixed;
+    right:0;
+    top:200px;
+    gap:10px;
+    z-index:99;
+}
+
+body.dark {
+    background:black;
+}
+body.dark p {
+    color:var(--white-color);
+}
+body.dark #banner_section .banner_main p {
+    color:var(--white-color);
+}
+body.dark #course_gallery .item {
+    box-shadow:2px 2px 10px 0px white;
+}
+body.dark #course_gallery .item p {
+    color:var(--white-color);
+}
+
+body.dark #skill_section .row .col-lg-8 span {
+    color:var(--white-color);
+}
+body.dark .color_switcher {
+    border:1px solid white;
+}
+body.dark .color_switcher .switch i {
+    color:#fff;
+}
+
+/* mode chose  */
+
+
+
+/* Preloader  */
+.preloader {
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#FFFFFF;
+    position:absolute;
+
+    z-index:999;
+}
+/* Preloader  */
+
+/* Mouse move  */
+.cursor {
+    width:50px;
+    height:50px;
+    background:rgba(255, 255, 0, 0.484);
+    position:absolute;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    transition:all linear .3s;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    z-index:999;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+    animation:cursor 1s linear infinite;
+    -webkit-animation:cursor 2s linear infinite;
+    
+}
+@keyframes cursor {
+    0% {
+        box-shadow:0px 0px 0px 12px yellow;
+        transition:all linear 0.1s;
+        -webkit-transition:all linear 0.1s;
+        -moz-transition:all linear 0.1s;
+        -ms-transition:all linear 0.1s;
+        -o-transition:all linear 0.1s;
+}
+    100%,30% {
+        box-shadow:0px 0px 0px 24px transparent;
+        transition:all linear 0.7s    ;
+        -webkit-transition:all linear 0.7s    ;
+        -moz-transition:all linear 0.7s    ;
+        -ms-transition:all linear 0.7s    ;
+        -o-transition:all linear 0.7s    ;
+}
+}
+.pointer {
+    width:5px;
+    height:5px;
+    background:blueviolet;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    transition:all linear .1s;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    z-index:999;
+    -webkit-transition:all linear .1s;
+    -moz-transition:all linear .1s;
+    -ms-transition:all linear .1s;
+    -o-transition:all linear .1s;
+}
+
+
+
+/* Mouse move  */
+
+
+/* Color Switcher  */
+.color_switcher {
+    display:flex;
+    align-items:center;
+    gap:20px;
+    position:fixed;
+    left:-20%;
+    top:350px;
+    border:1px solid black;
+    border-radius:4px;
+    padding:6px ;
+    z-index:99999;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    transition:all linear 0.7s;
+    -webkit-transition:all linear 0.7s;
+    -moz-transition:all linear 0.7s;
+    -ms-transition:all linear 0.7s;
+    -o-transition:all linear 0.7s;
+    background:yellowgreen
+}
+.color_switcher.show {
+    left:0;
+}
+.color {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    cursor:pointer;
+    
+}
+.color_switcher .red {
+    background:red;
+    width:30px;
+    height:30px;
+}
+.color_switcher .green {
+    background:green;
+    width:30px;
+    height:30px;
+}
+
+.color_switcher .yellow {
+    background:yellow;
+    width:30px;
+    height:30px;
+}
+.color_switcher .purple {
+    background:purple;
+    width:30px;
+    height:30px;
+}
+.color_switcher .blue {
+    background:blue;
+    width:30px;
+    height:30px;
+}
+.color_switcher .white {
+    background:white;
+    width:30px;
+    height:30px;
+}
+
+.color_switcher .switch i {
+    font-size:25px;
+    cursor:pointer;
+    animation:spinner 4s linear infinite;
+    -webkit-animation:switch 20s linear infinite;
+}
+@keyframes switch {
+    0% {
+        transform:rotate(0deg)    ;
+        -webkit-transform:rotate(0deg)    ;
+        -moz-transform:rotate(0deg)    ;
+        -ms-transform:rotate(0deg)    ;
+        -o-transform:rotate(0deg)    ;
+    }
+    100% {
+        transform:rotate(6000deg)    ;
+        -webkit-transform:rotate(6000deg)    ;
+        -moz-transform:rotate(6000deg)    ;
+        -ms-transform:rotate(6000deg)    ;
+        -o-transform:rotate(6000deg)    ;
+}
+
+
+}
+
+
+/* Color Switcher  */
+
+
+
+
+/* Navbar Start  */
+.navbar {
+
+}
+.navbar .navbar-brand {
+    width:50px;
+}
+/* side menu  */
+.offcanvas .offcanvas-header img {
+    width:50px;
+}
+/* side menu  */
+/* Navbar End */
+
+
+
+
+/* Banner Seciton Start  */
+#banner_section {
+    padding:100px 0px;
+    /* background-image:url(../images/banner.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center; */
+}
+#banner_section .banner_main h2 {
+    color:var(--heading-color);
+    font-size:40px;
+    font-weight:600;
+    font-family:'Courier New', Courier, monospace;
+    line-height:40px;
+}
+#banner_section .banner_main p {
+    color:var(--paragraph-color);
+    font-size:16px;
+    font-weight:400;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height:24px;
+}
+#banner_section .banner_main a {
+    color:var(--white-color);
+    font-size:16px;
+    font-weight:400;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height:24px;
+    width:150px;
+    height:60px;
+    background:var(--primary-color);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:17px;
+    -webkit-border-radius:17px;
+    -moz-border-radius:17px;
+    -ms-border-radius:17px;
+    -o-border-radius:17px;
+}
+
+
+/* Banner Seciton End */
+
+
+/* img galley Seciton  Start  */
+#course_gallery  {
+    padding:50px 0px;
+}
+#course_gallery  .buttons {
+   margin:30px 0px;
+}
+#course_gallery  .buttons .btn {
+   margin-right:10px;
+}
+
+#course_gallery  h2 {
+    text-align:center;
+    margin:30px 0px;
+    color:var(--heading-color);
+    font-size:40px;
+    font-weight:600;
+    font-family:'Courier New', Courier, monospace;
+    line-height:40px;
+}
+
+#course_gallery  .item {
+    text-align:center;
+    /*border:1px solid black;
+    */padding:10px;
+    box-shadow:2px 2px 20px 0px black;
+    border-radius:17px;
+    -webkit-border-radius:17px;
+    -moz-border-radius:17px;
+    -ms-border-radius:17px;
+    -o-border-radius:17px;
+    margin-bottom:20px;
+}
+#course_gallery  .item h5 {
+    color:var(--heading-color);
+}
+#course_gallery  .item h6 {
+    color:var(--primary-color);
+}
+#course_gallery .item p {
+    color:var(--paragraph-color);
+}
+
+/* img galley Seciton  End */
+
+
+
+
+/* Skill Seciton  Start  */
+#skill_section {
+    padding:50px 0px;
+
+}
+#skill_section {
+    padding:50px 0px;
+
+}
+#skill_section h2 {
+    color:var(--heading-color);
+    font-size:40px;
+    font-weight:600;
+    font-family:'Courier New', Courier, monospace;
+    line-height:24px;
+    text-align:center;
+    margin:30px 0px;
+
+}
+.proggress {
+    position:relative;
+}
+.percentCount {
+    
+    position: absolute;
+    top: -34%;
+    left: 50%;
+    color: white;
+    font-size:10px;
+}
+#skill_section  .text {
+  padding-top:50px;
+
+}
+#skill_section  .text h4 {
+    color:var(--heading-color);
+    margin-bottom:50px;
+
+}
+#skill_section  .text a {
+    color:var(--white-color);
+    font-size:16px;
+    font-weight:400;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height:24px;
+    width:150px;
+    height:60px;
+    background:var(--primary-color);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:17px;
+    -webkit-border-radius:17px;
+    -moz-border-radius:17px;
+    -ms-border-radius:17px;
+    -o-border-radius:17px;
+    
+}
+
+/* Skill Seciton  End */
+
+
+
+/* img galley Seciton  Start  */
+#image_gallery {
+    padding:100px 0px;
+}
+#image_gallery h2{
+    font-size:40px;
+    font-weight:600;
+    line-height:24px;
+    color:var(--heading-color);
+    text-align:center;
+    margin-bottom:50px;
+}
+#image_gallery img  {
+    height:200px;
+    width:300px;
+    margin-bottom:20px;
+}
+
+/* img galley Seciton  End */

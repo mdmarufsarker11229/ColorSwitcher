@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap modal </title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/jquery.lineProgressbar.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- mode chose  -->
+  <div class="mode d-flex align-items-center">
+    <button type="button " class="btn btn-info light">Light</button>
+    <button type="button " class="btn btn-info dark">Dark</button>
+  </div>
+  <!-- mode chose  -->
+
+
+  <!-- Preloader  -->
+  <div class="preloader">
+    <img class="img-fluid" src="images/preloader.gif" alt="gif-image">
+  </div>
+  <!-- Preloader  -->
+
+  <!-- Cursor move  -->
+  <span class="cursor"></span>
+  <span class="pointer"></span>
+  <!-- Cursor move  -->
+
+
+  <!-- color Switcher  -->
+  <div class="color_switcher">
+    <div class="color red" data-color="red"></div>
+    <div class="color green" data-color="green"></div>
+    <div class="color yellow" data-color="yellow"></div>
+    <div class="color blue" data-color="blue"></div>
+    <div class="color purple" data-color="purple"></div>
+    <div class="color white" data-color="white"></div>
+    <div class="switch">
+      <i class="fa-solid fa-gear"></i>
+    </div>
+    
+  </div>
+  <!-- color Switcher  -->
+
+
+  <!-- Navbar Start  -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-fluid" src="images/logo.png" alt="logo-image">
+      </a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <!-- side menu  -->
+      <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="fa-solid fa-bars"></i>
+     </button>
+      <!-- side menu  -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Course's
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">Contact Us </a>
+          </li>
+        </ul>
+        <form class="d-flex" >
+         
+          <button class="btn btn-outline-success" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End  -->
+
+  <!-- Side Menu  -->
+  
+  
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+     <a href="index.html"><img class="img-fluid" src="images/logo.png" alt="logo-image"></a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Course's
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <!-- <li><hr class="dropdown-divider"></li> -->
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ">Contact Us </a>
+        </li>
+      </ul>
+      <form class="d-flex" >
+         
+        <button class="btn btn-outline-success" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  <!-- Side Menu  -->
+
+  <!-- data-vide-bg="videos/v.mp4" data-vide-options="loop: true, muted: false, position: 0% 0%, autopaly:ture," -->
+  <!-- Banner section Start  -->
+    <section id="banner_section" >
+      <div class="container">
+        <div class="banner_main">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>This is Banner section.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet neque eius distinctio soluta optio quae doloribus nisi quasi magnam illo.</p>
+
+              <a href="#">Read More!</a>
+            </div>
+            <div class="col-lg-6"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Banner section End -->
+ <!-- Image gallery  section Start -->
+    <section id="course_gallery">
+      <div class="container">
+
+      
+
+
+        <h2>Course Gallery </h2>
+        <div class="buttons">
+          <button class="btn btn-info" type="button" data-filter="all">All</button>
+          <button class="btn btn-info" type="button" data-filter=".web">Web Design </button>
+          <button class="btn btn-info" type="button" data-filter=".graphic">Graphic Design </button>
+          <button class="btn btn-info" type="button" data-filter=".digital">Digital Marketing </button>
+        </div>
+        <div class="row gallery">
+          <div class="col-lg-3 " >
+            <div class="item mix web"  data-tilt>
+              <h5>Web Design </h5>
+              <h6>$50 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 ">
+            <div class="item mix web" data-tilt>
+              <h5>Web Design </h5>
+              <h6>$50 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 ">
+            <div class="item mix web" data-tilt>
+              <h5>Web Design </h5>
+              <h6>$50 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 ">
+            <div class="item mix web" data-tilt>
+              <h5>Web Design </h5>
+              <h6>$50 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+
+
+          <!-- graphic  -->
+          <div class="col-lg-3 ">
+            <div class="item mix graphic" data-tilt>
+              <h5>Graphic Design </h5>
+              <h6>$40 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 ">
+            <div class="item mix graphic" data-tilt>
+              <h5>Graphic Design </h5>
+              <h6>$40 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 ">
+            <div class="item mix graphic" data-tilt>
+              <h5>Graphic Design </h5>
+              <h6>$40 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 ">
+            <div class="item mix graphic" data-tilt>
+              <h5>Graphic Design </h5>
+              <h6>$40 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+          
+
+          <!-- Digital marketing  -->
+          <div class="col-lg-3 ">
+            <div class="item mix digital" data-tilt>
+              <h5>Digital Marketing </h5 >
+              <h6>$60 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 ">
+            <div class="item mix digital" data-tilt>
+              <h5>Digital Marketing </h5>
+              <h6>$60 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 ">
+            <div class="item mix digital" data-tilt>
+              <h5>Digital Marketing </h5>
+              <h6>$60 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 ">
+            <div class="item mix digital" data-tilt>
+              <h5>Digital Marketing </h5>
+              <h6>$60 </h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, porro!</p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+  <!-- Image gallery  section End -->
+
+
+ <!-- Skill   section Start -->
+    <section id="skill_section">
+      <div class="container">
+        <h2>My Skill </h2>
+        <div class="row">
+          <div class="col-lg-8">
+           <span> Html</span>
+            <div id="html"></div>
+            <span>Css</span>
+            <div id="css"></div>
+            <span>Bootstrap</span>
+            <div id="bootstrap"></div>
+            <span>Java Script</span>
+            <div id="javascript"></div>
+            <span>Jquery</span>
+            <div id="jquery"></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="text">
+              <h4>Skill of mine Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dolores!</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto doloribus saepe, obcaecati suscipit maiores delectus molestiae ducimus dolor eveniet labore exercitationem incidunt odio quod unde reprehenderit quasi? Maxime, ea rerum!</p>
+
+              <a href="#">See More </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Skill   section End -->
+
+
+
+
+
+   <!-- img gallery  section Start -->
+    <section id="image_gallery">
+      <div class="container">
+        <h2>Image Gallery </h2>
+        <div class="row">
+          <div class="col-lg-3">
+            <a class="my_image" href="images/1.jpg" data-gall="gallery01"><img class="img-fluid" src="images/1.jpg" alt="image"></a>
+          </div>
+          <div class="col-lg-3">
+            <a class="my_image" href="images/2.jpg" data-gall="gallery01"><img class="img-fluid" src="images/2.jpg" alt="image"></a>
+          </div>
+          <div class="col-lg-3">
+            <a class="my_image" href="images/3.jpg" data-gall="gallery01"><img class="img-fluid" src="images/3.jpg" alt="image"></a>
+          </div>
+          <div class="col-lg-3">
+            <a class="my_image" href="images/4.jpg" data-gall="gallery01"><img class="img-fluid" src="images/4.jpg" alt="image"></a>
+          </div>
+          <div class="col-lg-3">
+            <a class="my_image" href="images/5.jpg" data-gall="gallery01"><img class="img-fluid" src="images/5.jpg" alt="image"></a>
+          </div>
+          <div class="col-lg-3">
+            <a class="my_image" href="images/4.jpg" data-gall="gallery01"><img class="img-fluid" src="images/4.jpg" alt="image"></a>
+          </div>
+          <div class="col-lg-3">
+            <a class="my_image" href="images/3.jpg" data-gall="gallery01"><img class="img-fluid" src="images/3.jpg" alt="image"></a>
+          </div>
+          <div class="col-lg-3">
+            <a class="my_image" href="images/2.jpg" data-gall="gallery01"><img class="img-fluid" src="images/2.jpg" alt="image"></a>
+          </div>
+          <div class="col-lg-3">
+            <a class="my_image" href="images/1.jpg" data-gall="gallery01"><img class="img-fluid" src="images/1.jpg" alt="image"></a>
+          </div> 
+          <div class="col-lg-3">
+            <a class="my_image" href="images/2.jpg" data-gall="gallery01"><img class="img-fluid" src="images/2.jpg" alt="image"></a>
+          </div>
+          <div class="col-lg-3">
+            <a class="my_image" href="images/2.jpg" data-gall="gallery01"><img class="img-fluid" src="images/2.jpg" alt="image"></a>
+          </div>
+          <div class="col-lg-3">
+            <a class="my_image" href="images/3.jpg" data-gall="gallery01"><img class="img-fluid" src="images/3.jpg" alt="image"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- img gallery  section End -->
+
+
+
+
+
+
+
+
+     <!-- Image gallery  section Start -->
+  <!-- Image gallery  section End -->
+     <!-- Image gallery  section Start -->
+  <!-- Image gallery  section End -->
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+    <script src="js/jquery.lineProgressbar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
